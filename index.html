@@ -8,7 +8,7 @@
   <title>Electronic First</title>
 </head>
 <body>
-  <header class="header">
+  <header class="header-container header">
     
       <div>
         <img height="60" width="100" src="/src/assets/images/electronic_first_logo.jpeg" />
@@ -46,26 +46,88 @@
         <p>XBOX</p>
         <i class="fa-solid fa-chevron-down" style="color:grey; "></i>
       </div>
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
     </div>
     
   </div>
+
+  <div class="dropdown-container">
+      <div class="dropdown-container-header">
+        <h4>Platforms</h4>
+        <h6>View all</h6>
+      </div>
+      <div class="dropdown-container-content">
+        <div class="dropdown-container-item">
+          <img height="50" width="50" src="/src/assets/images/rockstar.png"/>
+          <p>Rockstar</p>
+        </div>
+        <div class="dropdown-container-item">
+          <img height="50" width="50" src="/src/assets/images/steam.png"/>
+          <p>Steam</p>
+        </div>
+         <div class="dropdown-container-item">
+          <img height="50" width="50" src="/src/assets/images/ubisoft.png"/>
+          <p>Ubisoft</p>
+        </div>
+        <div class="dropdown-container-item">
+          <img height="50" width="50" src="/src/assets/images/ea_logo.png"/>
+          <p>EA App</p>
+        </div>
+      </div>
+       <div class="dropdown-container-header">
+        <h4>PrePaid Cards</h4>
+        <h6>View all</h6>
+      </div>
+      <div class="dropdown-container-content">
+        <div class="dropdown-container-item">
+          <img height="50" width="50" src="/src/assets/images/steam-gift-cards.webp"/>
+          <p>Steam Gift Cards</p>
+        </div>
+        <div class="dropdown-container-item">
+          <img height="50" width="50" src="/src/assets/images/blizzards-gift-cards.webp"/>
+          <p>Blizzards Gift Cards</p>
+        </div>
+      </div>
+  </div>
   
   <section class="banner">
-    <img src="/src/assets/images/banner.jpg" alt="Banner Image">
+    <img width="100%" height="600px" src="/src/assets/images/banner.jpg" alt="Banner Image">
   </section>
 
-  <section class="product-slider">
-    <div class="slider-container">
-      <div class="slider">
-        <div class="product">
-          <img src="/src/assets/images/camera.jpg" alt="Camera Image">
+  <section class="product-list">
+    <div class="product-list-header">
+      <h2>Trending</h2>
+      <button class="view-all-button-container">View All</button>
+    </div>
+    <div class="product-list-items">
+     
+        <div class="product-list-item">
+          <img height="300" width="500" src="/src/assets/images/camera.jpg" alt="Camera Image">
+          <div class="product-item-detail">
+            <p>Camera</p>
+            <p>14.56 $</p>
+          </div> 
         </div>
-        <div class="product">
-          <img src="/src/assets/images/headphone.jpeg" alt="headphone Image">
+        <div class="product-list-item">
+          <img height="300" width="500" src="/src/assets/images/headphone.jpeg" alt="headphone Image">
+          <div class="product-item-detail">
+            <p>Headphone</p>
+            <p>14.56 $</p>
+          </div> 
+        </div>
+        <div class="product-list-item">
+          <img height="300" width="500" src="/src/assets/images/headphone.jpeg" alt="headphone Image">
+          <div class="product-item-detail">
+            <p>headphone</p>
+            <p>14.56 $</p>
+          </div> 
         </div>
         
         <!-- Add more products here -->
-      </div>
+     
     </div>
   </section>
 

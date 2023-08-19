@@ -1,48 +1,21 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  
-  .banner {
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-    }
-  }
-  
-  .product-slider {
-    background-color: #f7f7f7;
-    padding: 2rem 0;
-  
-    .slider-container {
-      max-width: 1200px;
-      margin: 0 auto;
-      overflow: hidden;
-  
-      .slider {
-        display: flex;
-        transition: transform 0.3s ease-in-out;
-  
-        .product {
-          flex: 0 0 33.33%;
-          padding: 1rem;
-          box-sizing: border-box;
-          background-color: #fff;
-          border: 1px solid #ddd;
-  
-          @media screen and (max-width: 768px) {
-            flex: 0 0 50%;
-          }
-        }
-      }
-    }
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(26, 17, 16);
+}
+
+.banner {
+  width: 100%;
+  height: 600px;
+}
 
 
-.header{
+.header-container{
+  width: 100vw;
+}
+
+.header {
   padding-top: 1rem;
   position: fixed;
   height: 40px;
@@ -52,28 +25,28 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: transparent;
-  padding-left:30px;
-  padding-right: 50px; 
+  padding-left: 30px;
+  padding-right: 50px;
   color: gray;
 }
 
-.header-mid-buttons{
+.header-mid-buttons {
   display: flex;
   flex-direction: row;
   gap: 20px;
 
 }
 
-.header-side-buttons{
+.header-side-buttons {
   position: relative;
   display: flex;
-  color:white;
+  color: white;
   margin-right: 70px;
   gap: 40px;
   font-size: xx-large;
 }
 
-.secondary-header{
+.secondary-header {
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -81,38 +54,147 @@ body {
   z-index: 10;
   background-color: transparent;
   width: 100vw;
- 
-  margin:auto;
-  top:50px;
+
+  margin: auto;
+  top: 60px;
   color: white;
 }
-  
-.secondary-child-header{
+
+.secondary-child-header {
   position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap:20px;
-  width:fit-content;
-  background: rgba(255, 255, 255, 0.2); /* Background color with transparency */
+  gap: 20px;
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.2);
+  /* Background color with transparency */
   backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 0px 20px;
 }
 
-.secondary-header-item{
+.secondary-header-item {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap:10px;
+  gap: 10px;
   cursor: pointer;
 }
 
+
+.search-bar {
+  position: relative;
+  color: white;
+  background-color: #f5d020;
+  background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
+  border-radius: 50%;
+  width: 50px;
+  height: calc(100% + 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -50px;
+  margin-top: -10px;
+}
+
 // nav drop down 
-.dropdown-container{
+.dropdown-container {
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  background: rgba(255, 255, 255, 0.2);
+  /* Background color with transparency */
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  top: 120px;
+  z-index: 11px;
+  width: 50%;
+  height: auto;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.dropdown-container-header {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  color: white;
+  height: 50px;
+}
+
+.dropdown-container-content {
+  background-color: transparent;
+  height: auto;
+  padding: 30px;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Create a 3-column grid with equal widths */
+  gap: 10px;
+
+}
+
+.dropdown-container-item {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.product-list {
+  max-width: 100%;
+  margin: 20px 150px;
+  height: auto;
+  margin-bottom: 40px;
+}
+
+.product-list-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  background-color: transparent;
+  padding: 0px 10px;
+}
+
+.view-all-button-container{
+  border: 1px solid;
+  font-weight: 800;
+  border-radius: 10px;
+  color: white;
+  background-color: rgb(26, 17, 16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  padding:20px 20px;
+  cursor: pointer;
+}
+
+.product-list-items{
+  display: flex;
+  flex-direction: row;
+  gap:20px;
+}
+
+.product-list-item{
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  cursor: pointer;
+ 
+}
+
+.product-item-detail{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: whitesmoke;
 }

@@ -12,6 +12,8 @@ searchBtn.addEventListener('click',()=>{
 })
 
 navHeader.addEventListener('click',()=>{
+  dropDownBtn.classList.toggle('dropdown-container')
+
   if(dropDownBtn.style.display=='none'){
     dropDownBtn.style.display='flex';
   }

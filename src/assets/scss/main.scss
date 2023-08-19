@@ -4,12 +4,6 @@ body {
     font-family: Arial, sans-serif;
   }
   
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
   
   .banner {
     img {
@@ -49,6 +43,7 @@ body {
 
 
 .header{
+  padding-top: 1rem;
   position: fixed;
   height: 40px;
   width: 100%;
@@ -77,4 +72,47 @@ body {
   gap: 40px;
   font-size: xx-large;
 }
+
+.secondary-header{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 10;
+  background-color: transparent;
+  width: 100vw;
+ 
+  margin:auto;
+  top:50px;
+  color: white;
+}
   
+.secondary-child-header{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:20px;
+  width:fit-content;
+  background: rgba(255, 255, 255, 0.2); /* Background color with transparency */
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 0px 20px;
+}
+
+.secondary-header-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
+  cursor: pointer;
+}
+
+// nav drop down 
+.dropdown-container{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
